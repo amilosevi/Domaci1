@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Studentska iskaznica</title>
+	<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<body>
+<form id="forma" method="POST">
+
+	
+    <input type="text" id="ime" name="ime" placeholder="Ime">
+	<input type="text" id="prezime" name="prezime" placeholder="Prezime">
+	<input type="text" id="email" name="email" placeholder="Email">
+	
+	<select id="studij" name="studij">
+	<option value="" disabled selected>Studij</option>
+        <option value="Biologija">Biologija</option>
+        <option value="Biologija i kemija">Biologija i kemija</option>
+        <option value="Informatika">Informatika</option>
+		<option value="Informatika i tehnika">Informatika i tehnika</option>
+		<option value="Fizika">Fizika</option>
+		<option value="Fizika i informatika">Fizika i informatika</option>
+		<option value="Matematika">Matematika</option>
+		<option value="Matematika i informatika">Matematika i informatika</option>
+		<option value="Matematika i fizika">Matematika i fizika</option>
+		<option value="Nutricionizam">Nutricionizam</option>
+    </select>  
+<br>
+	<input type="button" value="Unesi" onclick="Unos()">
+</form>
+
+<form id="iksica" hidden>
+<img src="zena.jpg" class="profil"><br>
+<label>IME</label>
+<label id="im"></label><br>
+<label>PREZIME</label>
+<label id="prez"></label><br>
+<label>STUDIJ</label>
+<label id="stud"></label><br>
+<label>EMAIL</label>
+<label id="em"></label><br>
+<br>
+<label>PMFST</label><br>
+<img src="barr.png" class="bar">
+
+</form>
+
+<script>
+function Unos() {
+	var x = document.getElementById("iksica");
+	x.style.display="block";
+	
+	var ime = document.getElementById("ime");
+	var prezime = document.getElementById("prezime");
+	var studij = document.getElementById("studij");
+	var email = document.getElementById("email");
+	document.getElementById("im").innerHTML = ime.value;
+	document.getElementById("prez").innerHTML = prezime.value;
+	document.getElementById("stud").innerHTML = studij.value;
+	document.getElementById("em").innerHTML = email.value;
+}
+
+</script>
+</body>
+</html>

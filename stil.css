@@ -1,0 +1,86 @@
+body {
+  background-color: #f9e4ff;
+  background-image: url("pozdn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#forma{
+  border: 2px solid #8a99a8;
+  border-radius: 8px;
+  background-color: #e6f2ff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  margin: auto;
+  margin-top: 100px;
+  width: 35%;
+  opacity: 0.9;
+}
+
+input[type=text], select{
+  width: 85%;
+  padding: 18px;
+  border: 1px solid #bf80ff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: "Bahnschrift Light";
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+input[type=button]{
+  background-color: #001a33;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  color: #f9e4ff;
+  padding: 16px 45px;
+  border: 1px solid #bf80ff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Bahnschrift Light";
+  font-size: 16px;
+}
+input[type=button]:hover{
+  opacity: 0.8;
+}
+
+#iksica {
+  border: 1px solid #8a99a8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  max-width: 300px;
+  margin: auto;
+  background-color:	#000d1a;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.profil{
+	width:100%;
+	margin-bottom: 40px;
+	border-radius: 3px;
+}
+
+label{
+	color: #61696b;
+	font-size: 14px;
+	font-family: "Corbel";
+}
+.bar{
+	margin: auto;
+	width: 20%;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+	opacity: 0.9;
+}
+
+#im, #prez{
+	color: #e6f2ff;
+	font-size: 17px;
+	font-family: "Book Antiqua";
+	text-transform: capitalize;
+}
+#em, #stud{
+	color: #e6f2ff;
+	font-size: 17px;
+	font-family: "Book Antiqua";
+}
